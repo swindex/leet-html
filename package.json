@@ -3,7 +3,7 @@
 	"displayName": "leet-html",
 	"description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript literal template strings",
 	"version": "1.0.0",
-	"publisher": "swindex",
+	"publisher": "EldarGerfanov",
 	"icon": "docs/logo.png",
 	"galleryBanner": {
 		"color": "#fcfcfc",
@@ -22,7 +22,6 @@
 		"Programming Languages"
 	],
 	"keywords": [
-		"lit-html",
 		"javascript",
 		"typescript",
 		"html",
