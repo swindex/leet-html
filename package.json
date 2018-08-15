@@ -1,0 +1,66 @@
+{
+	"name": "leet-html",
+	"displayName": "leet-html",
+	"description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings",
+	"version": "1.0.0",
+	"publisher": "eldarg",
+	"icon": "docs/logo.png",
+	"galleryBanner": {
+		"color": "#fcfcfc",
+		"theme": "light"
+	},
+	"repository": {
+		"url": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"lit-html",
+		"javascript",
+		"typescript",
+		"html",
+		"literal",
+		"template"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [
+					"source.js",
+					"source.js.jsx",
+					"source.jsx",
+					"source.ts",
+					"source.tsx",
+					"text.html.basic"
+				],
+				"scopeName": "inline.leet-html",
+				"path": "./syntaxes/leet-html.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.html": "html",
+					"meta.embedded.block.css": "css",
+					"source.css": "css"
+				}
+			}
+		],
+		"typescriptServerPlugins": [
+			{
+				"name": "typescript-lit-html-plugin"
+			}
+		]
+	},
+	"dependencies": {
+		"typescript-lit-html-plugin": "0.5.3"
+	},
+	"__metadata": {
+		"id": "",
+		"publisherId": "",
+		"publisherDisplayName": "Eldar Gerfanov"
+	}
+}
