@@ -1,16 +1,16 @@
 {
 	"name": "leet-html",
 	"displayName": "leet-html",
-	"description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript tagged template strings",
+	"description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript literal template strings",
 	"version": "1.0.0",
-	"publisher": "eldarg",
+	"publisher": "swindex",
 	"icon": "docs/logo.png",
 	"galleryBanner": {
 		"color": "#fcfcfc",
 		"theme": "light"
 	},
 	"repository": {
-		"url": ""
+		"url": "https://github.com/swindex/leet-html"
 	},
 	"bugs": {
 		"url": ""
