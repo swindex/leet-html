@@ -2,7 +2,7 @@
 	"name": "leet-html",
 	"displayName": "leet-html",
 	"description": "Syntax highlighting and IntelliSense for html inside of JavaScript and TypeScript literal template strings",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "EldarGerfanov",
 	"icon": "docs/logo.png",
 	"galleryBanner": {
@@ -29,33 +29,24 @@
 		"template"
 	],
 	"contributes": {
-		"grammars": [
+    "grammars": [
 			{
 				"injectTo": [
+					"source.html",
 					"source.js",
 					"source.js.jsx",
 					"source.jsx",
 					"source.ts",
 					"source.tsx",
-					"text.html.basic"
+					"text.html"
 				],
 				"scopeName": "inline.leet-html",
 				"path": "./syntaxes/leet-html.json",
 				"embeddedLanguages": {
-					"meta.embedded.block.html": "html",
-					"meta.embedded.block.css": "css",
-					"source.css": "css"
+					"meta.embedded.block.html": "html"
 				}
 			}
-		],
-		"typescriptServerPlugins": [
-			{
-				"name": "typescript-lit-html-plugin"
-			}
 		]
-	},
-	"dependencies": {
-		"typescript-lit-html-plugin": "0.5.3"
 	},
 	"__metadata": {
 		"id": "",
