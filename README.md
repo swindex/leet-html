@@ -27,7 +27,7 @@ return (true ? `<div></div>` : `<span></span>` );
 
 ## What does not work
 
-The opening ` character can not be the first on the line and can not preceeded the folowing operators: ```(```
+The opening ` character can not be the first on the line and can not be enclosed by the folowing operators: ```(), []``` 
 
 
 So the following variants will not be highlighted:
@@ -43,12 +43,20 @@ var a =
 a += 
 `<div></div>` + `<br>`;
 ```
+
+## Solution for unsupported cases
+
+Use the ```/*html*/``` prefix before the template to turn on highlighting:
+```
+(/*html*/`<div></div>');
+```
+
 ## Release Notes
 
 
 ### 1.0.0
 Initial release
 
-### 1.1.0
+### 1.1.1
 More robust checking
 Removed unneded dependency

@@ -19,15 +19,6 @@
   },
   "patterns": [
     {
-      "match" : "(`([^`]*)`)",
-      "captures": {
-        "2": {
-          "patterns":[{ "include": "text.html.basic" }]
-        }
-			}
-    },
-    
-    {
       "begin": "(return)\\s*(`)",
       "beginCaptures": {
 				"1": {
@@ -62,6 +53,7 @@
         }
       ]
     },
+
     {
       "begin": "(\\+=)\\s*(`)",
       "beginCaptures": {
@@ -79,7 +71,44 @@
         }
       ]
     },
-    
+
+    {
+      "begin": "(\\+)\\s*(`)",
+      "beginCaptures": {
+				"1": {
+					"name": "keyword.operator.arithmetic.js"
+        }
+      },
+      "end": "(`)",
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "text.html.basic"
+        }
+      ]
+    },
+
+    {
+      "begin": "(\\,)\\s*(`)",
+      "beginCaptures": {
+				"1": {
+					"name": "keyword.operator.arithmetic.js"
+        }
+      },
+      "end": "(`)",
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "text.html.basic"
+        }
+      ]
+    },
+
+       
     {
       "begin": "(\\?|\\:)\\s*(`)",
       "beginCaptures": {
@@ -96,7 +125,25 @@
           "include": "text.html.basic"
         }
       ]
-    }    
+    },
+
+    {
+      "begin": "(\\/\\*html\\*\\/)\\s*(`)",
+      "beginCaptures": {
+				"1": {
+          "name": "comment.block.js"
+        }
+      },
+      "end": "(`)",
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "text.html.basic"
+        }
+      ]
+    }
   ],
   "scopeName": "inline.leet-html"
 }
