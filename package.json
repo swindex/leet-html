@@ -13,7 +13,7 @@
 		"url": "https://github.com/swindex/leet-html"
 	},
 	"bugs": {
-		"url": ""
+		"url": "https://github.com/swindex/leet-html"
 	},
 	"engines": {
 		"vscode": "^1.15.0"
@@ -29,7 +29,7 @@
 		"template"
 	],
 	"contributes": {
-    "grammars": [
+		"grammars": [
 			{
 				"injectTo": [
 					"source.html",
@@ -51,6 +51,7 @@
 	"__metadata": {
 		"id": "",
 		"publisherId": "",
-		"publisherDisplayName": "Eldar Gerfanov"
+		"publisherDisplayName": "Eldar Gerfanov",
+		"size": 125587
 	}
 }

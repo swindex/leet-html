@@ -55,6 +55,24 @@
     },
 
     {
+      "begin": "(\\()\\s*(`)",
+      "beginCaptures": {
+				"1": {
+					"name": "keyword.operator.bracket.open.js"
+        }
+      },
+      "end": "(`)",
+      "patterns": [
+        {
+          "include": "source.ts#template-substitution-element"
+        },
+        {
+          "include": "text.html.basic"
+        }
+      ]
+    },
+
+    {
       "begin": "(\\+=)\\s*(`)",
       "beginCaptures": {
 				"1": {
@@ -127,7 +145,7 @@
     },
 
     {
-      "begin": "(\\/\\*html\\*\\/)\\s*(`)",
+      "begin": "(\\/\\*(h(?:tm[lx]?)?|s(?:vg)?)\\*\\/)\\s*(`)",
       "beginCaptures": {
 				"1": {
           "name": "comment.block.js"
