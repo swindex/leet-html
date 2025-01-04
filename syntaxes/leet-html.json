@@ -127,7 +127,7 @@
     },
 
     {
-      "begin": "(\\/\\*html\\*\\/)\\s*(`)",
+      "begin": "(\\/\\*(h(?:tm[lx]?)?|s(?:vg)?)\\*\\/)\\s*(`)",
       "beginCaptures": {
 				"1": {
           "name": "comment.block.js"

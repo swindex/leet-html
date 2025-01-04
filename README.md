@@ -51,12 +51,6 @@ Use the ```/*html*/``` prefix before the template to turn on highlighting:
 (/*html*/`<div></div>');
 ```
 
-## Release Notes
-
-
-### 1.0.0
-Initial release
-
-### 1.1.1
-More robust checking
-Removed unneded dependency
+## Other links
+* Publishing VSCode extensions:
+    > https://code.visualstudio.com/api/working-with-extensions/publishing-extension
