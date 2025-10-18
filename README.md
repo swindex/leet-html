@@ -1,7 +1,10 @@
 # leet-html README
 
-Display literal `templates` as HTML,
+VSCode extension to display literal `templates` in JavaScript as HTML,
 Unlike other plugins NO ```/*html*/``` prefix is required!
+
+## Get it for VSCode here:
+https://marketplace.visualstudio.com/items?itemName=EldarGerfanov.leet-html
 
 ## Features
 
